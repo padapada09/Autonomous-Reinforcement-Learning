@@ -1,2 +1,2 @@
-# learning
+# Learning
 Reinforcement Learning made simple.
