@@ -88,11 +88,20 @@ The list of hyper-parameters we will be optimizing is
     * number of bins for cart state discretization dc ∈ (5, 20)
     * number of bins for pole state discretization dp ∈ (5, 20)
 
- ### Hardware used
- Desktop PC with 10Gb RAM and a 4x3.20 Ghz processor.
+### Hardware used
+Desktop PC with 10Gb RAM and a 4x3.20 Ghz processor.
 
- ### Results
- ![Results](Imagenes/Results.png)
+### Results
+![Results](Imagenes/Results.png)
 
- ## Conclusions
- We can see
+## Conclusions
+
+Being able to perfect this algorithms for the general public, is crucial to give people more time to focus on specifying the reward function of their problem.<br>
+This last task is much more problem specific, and demands the user to know more about the objective of the learning process, and the area the problem is in.<br>
+The general rules we have are not certain; And spending time and effort adjusting our algorithm for each problem is not practical. If we want people in different areas to use machine learning, we must first make it consistant and simple.
+
+## Thanks
+
+The implementation and testing of the algorithm, as well as the idea of ranking the hyper-parameters to make a two step optimization is from Juan C. Barsce (UTN - FRSF).<br>
+The investigation was made with the direction and guidance of Ernesto C. Martínez (INGAR - CONICET).<br>
+The research was conducted in the context of a scholarship funded by the Univeridad Tecnológica Nacional, Facultad Regional Santa Fe, under the investigation and development center of sistems enginieering (CIDISI).
