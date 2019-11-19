@@ -19,7 +19,7 @@ As you can see in the image above, the agent gives an action (or decision) to th
 
 The exact calculation that the agent does to adjust it's policy varies, but usually follows the lines of a Q-learning algorithm.
 
-![QLearnig algorithm](Imagenes/QLearningAlgorithm.gif)
+![QLearnig algorithm](Imagenes/QlearningAlgorithm.gif)
 In this simple equation, we can allready see some hyper-parameters showing up. For the rest of this essay we will refeer to this hyper-parameters as "Algoithm hyper-parameters". The propper adjustment of theese values is key to face problems such as the "exploration vs eplotation dilemma".
 
 ## What are hyper-parameters
