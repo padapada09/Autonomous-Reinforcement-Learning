@@ -23,7 +23,7 @@ The exact calculation that the agent does to adjust it's policy varies, but usua
 In this simple equation, we can allready see some hyper-parameters showing up. For the rest of this essay we will refeer to this hyper-parameters as "Algoithm hyper-parameters". The propper adjustment of theese values is key to face problems such as the "exploration vs eplotation dilemma".
 
 ## What is a hyper-parameter?
-There is not much written about what is and what is not. But the general idea is that a hyperparameter is indeed a parameter that whose value is set befor the learning process begins.<br>
+There is not much written about what is and what is not. But the general idea is that a hyperparameter is indeed a parameter whose value is set before the learning process begins.<br>
 With this definition in mind, many things can be stablished as hyper-parameters. We will divide them in two:
 1. <b>Model hyper-parameters</b>: Cannot be modified in the learning process. They affect the model.
 2. <b>Algorithm hyper-parameters</b>: They alter the performance of the learning process, without altering the model.
@@ -34,7 +34,8 @@ Bayesian Optimization is actually as strategy, that takes it's name from Thomas 
 
 ![Bayes Theorem](Imagenes/BayesTheorem.svg)
 
-This strategy consists on treating the unknown objective function as random and place a prior over it. Then, we evaluate the function and update our prior beliefs to get the posterior distribution. On the other hand, we use the posterior distribution to form an acquisition function that help us determine our next query point based on a given criteria, and the cycle starts again.
+This strategy consists on treating the unknown objective function as random and place a prior over it. Then, we evaluate the function and update our prior beliefs to get the posterior distribution.<br>
+On the other hand, we use the posterior distribution to form an acquisition function that help us determine our next query point based on a given criteria, and the cycle starts again.
 
 ![Bayes Optimization](Imagenes/BayesOptimization.png)
 
