@@ -64,4 +64,35 @@ for model_evaluation in range(N):
 return argmax(f),max(f)
 ```
 
-## Conclusions
+## Case study
+### Problem
+We will be testing our algorithm in the [Cart-Pole](https://gym.openai.com/envs/CartPole-v1/) problem defined by Sutton in the book "Reinforcement Learning", and implemented in the library [gym.openai](http://gym.openai.com/)
+
+### Comparison
+We will compear our algorithm with a random search and a
+decoupled Bayesian Optimization. For that we will run each algorithm ten times, each run comprised of 30 meta-episodes for hyper-parameter optimization, and each meta-episode involving completing 3000 episodes where the agent must learn a control policy from scratch using a given setting of hyper-parameters.
+
+### Hyper-parameters to optimize
+The list of hyper-parameters we will be optimizing is
+1. Model hyper-parameters
+    * Learning algorithm: a ∈ {Q-learning, SARSA}
+    * Eligibility traces t ∈ {True, False}
+    * Exploration p ∈ {e-greedy, Softmax}
+    * Exploration reduction per episode, e-decay ∈ {True, False}
+2. Algorithm hyper-parameters
+    * α ∈ (0, 1)
+    * e ∈ (0, 1)
+    * γ ∈ (0, 1)
+    * λ ∈ (0, 1) (if used)
+    * e-decay ∈ (10−3, 10−2) (if used)
+    * number of bins for cart state discretization dc ∈ (5, 20)
+    * number of bins for pole state discretization dp ∈ (5, 20)
+
+ ### Hardware used
+ Desktop PC with 10Gb RAM and a 4x3.20 Ghz processor.
+
+ ### Results
+ ![Results](Imagenes/Results.png)
+
+ ## Conclusions
+ 
