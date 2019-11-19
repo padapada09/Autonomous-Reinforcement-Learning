@@ -22,7 +22,7 @@ The exact calculation that the agent does to adjust it's policy varies, but usua
 ![QLearnig algorithm](Imagenes/QLearningAlgorithm.gif)
 In this simple equation, we can allready see some hyper-parameters showing up. For the rest of this essay we will refeer to this hyper-parameters as "Algoithm hyper-parameters". The propper adjustment of theese values is key to face problems such as the "exploration vs eplotation dilemma".
 
-## What are hyper-parameters
+## What is a hyper-parameter?
 There is not much written about what is and what is not. But the general idea is that a hyperparameter is indeed a parameter that whose value is set befor the learning process begins.<br>
 With this definition in mind, many things can be stablished as hyper-parameters. We will divide them in two:
 1. <b>Model hyper-parameters</b>: Cannot be modified in the learning process. They affect the model.
@@ -38,7 +38,7 @@ This strategy consists on treating the unknown objective function as random and 
 
 ![Bayes Optimization](Imagenes/BayesOptimization.png)
 
-## How do we "update our beliefs"
+## How do we "update our beliefs"?
 To update our beliefs we use something called Gaussian Processes. Wich to make things a little simpler, we can describe as a set of random variables indexed by time or space. Why do we use this? because it allows us to know not only the average, but the level of uncertainty we have in every point of the domain of our function.
 
 ## One last thing before we propose an algorithm to implement all this
