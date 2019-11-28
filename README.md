@@ -24,8 +24,8 @@ In this simple equation, we can allready see some hyper-parameters showing up. F
 
 ## hyper-parameter hierarchy
 
-
-
+![Imagenes/hyper-parameter-hierarchy.png](Hyper-parameters hierarchy)
+<!--  -->
 ## What is Bayesian Optimization?
 Bayesian Optimization is actually as strategy, that takes it's name from Thomas Bayes, a British matematician and presbyterian minister that is best known for the Bayes' theorem (or Bayes' rule), wich describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
 
